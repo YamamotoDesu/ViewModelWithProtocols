@@ -62,4 +62,9 @@ struct CounterView<ViewModel>: View where ViewModel: CounterViewModelProtocol {
 }
 ```
 
+## Step 4: Instantiate and Use the View Model
 
+```swift
+let viewModel = CounterViewModelImpl()
+CounterView(viewModel: viewModel)
+```
