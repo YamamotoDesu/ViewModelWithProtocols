@@ -2,7 +2,7 @@
 
 
 ## Step 1: Define the View Model Protocol
-Start by defining the view model protocol that outlines the properties and methods that your views will interact with. 
+Start by defining the view model protocol that outlines the properties and methods that your views will interact with.     
 This protocol serves as the contract that your view models will conform to.
 
 ```swift
