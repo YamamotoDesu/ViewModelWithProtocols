@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CounterViewModelProtocol: ObservableObject {
+protocol CounterViewModelProtocol {
     var count: Int { get set }
     func didTapIncrement()
     func didTapDecrement()

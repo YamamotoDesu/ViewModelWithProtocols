@@ -7,8 +7,9 @@
 
 import Foundation
 
+@Observable
 final class CounterViewModelImpl: CounterViewModelProtocol {
-    @Published var count: Int = 0
+    var count: Int = 0
     
     func didTapIncrement() {
         count += 1

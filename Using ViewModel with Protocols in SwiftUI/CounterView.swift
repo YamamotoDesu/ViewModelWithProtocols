@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct CounterView<ViewModel>: View where ViewModel: CounterViewModelProtocol {
-    @StateObject private var viewModel: ViewModel
+    @State private var viewModel: ViewModel
     
     init(viewModel: ViewModel) {
-        self._viewModel = StateObject(wrappedValue: viewModel)
+        self._viewModel = State(wrappedValue: viewModel)
     }
     
     var body: some View {
