@@ -8,9 +8,11 @@ This protocol serves as the contract that your view models will conform to.
 ```swift
 import Foundation
 
-protocol CounterViewModelProtocol: ObservableObject {
+protocol CounterViewModelProtocol {
     var count: Int { get set }
     func didTapIncrement()
     func didTapDecrement()
 }
 ```
+
+
