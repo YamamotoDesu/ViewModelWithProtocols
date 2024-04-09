@@ -36,7 +36,7 @@ final class CounterViewModelImpl: CounterViewModelProtocol {
 ```
 
 ## Step 3: Create a SwiftUI View 
-Inject the view model into the view using the @StateObject property wrapper.
+Inject the view model into the view using the @State property wrapper.
 
 ```swift
 import SwiftUI
