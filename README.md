@@ -34,3 +34,32 @@ final class CounterViewModelImpl: CounterViewModelProtocol {
     }
 }
 ```
+
+## Step 3: Create a SwiftUI View 
+Inject the view model into the view using the @StateObject property wrapper.
+
+```swift
+import SwiftUI
+
+struct CounterView<ViewModel>: View where ViewModel: CounterViewModelProtocol {
+    @State private var viewModel: ViewModel
+    
+    init(viewModel: ViewModel) {
+        self._viewModel = State(wrappedValue: viewModel)
+    }
+    
+    var body: some View {
+        VStack {
+            Text("\(viewModel.count)")
+            Button("Increment") {
+                viewModel.didTapIncrement()
+            }
+            Button("Decrement") {
+                viewModel.didTapDecrement()
+            }
+        }
+    }
+}
+```
+
+
