@@ -15,6 +15,8 @@ protocol CounterViewModelProtocol {
 ```
 
 ## Step 2: Create a Concrete View Model
+Implement a concrete class that conforms to the view model protocol.     
+This class will provide the actual functionality and data that your views will use.    
 
 ```swift
 import Foundation
